@@ -1,12 +1,16 @@
 #ddev-generated
-# Simple template to demonstrate addon-template
+# Firebird database
 services:
-  addon-template:
-    container_name: ddev-${DDEV_SITENAME}-addon-template
-    image: busybox:stable
-    command: tail -f /dev/null
+  firebird:
+    container_name: ddev-${DDEV_SITENAME}-firebird
+    image: jacobalberty/firebird:v2.5.9
     networks: [default, ddev_default]
     restart: "no"
+    environment:
+      TZ: UTC
+      FIREBIRD_USER: db
+      FIREBIRD_PASSWORD: db
+      FIREBIRD_DATABASE: db
     # These labels ensure this service is discoverable by ddev.
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}

@@ -1,0 +1,7 @@
+#!/bin/bash
+#ddev-generated
+## Description: Run isql inside the redis container
+## Usage: isql
+## Example: "isql"
+
+isql -user db -password db /firebird/data/db.fdb
