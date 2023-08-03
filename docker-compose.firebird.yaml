@@ -3,7 +3,7 @@
 services:
   firebird:
     container_name: ddev-${DDEV_SITENAME}-firebird
-    image: jacobalberty/firebird:v2.5.9
+    image: jacobalberty/firebird:v2.5.9-ss
     networks: [default, ddev_default]
     restart: "no"
     environment:
