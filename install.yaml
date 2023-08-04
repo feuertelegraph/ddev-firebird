@@ -1,13 +1,6 @@
 name: firebird
 
 pre_install_actions:
-- |
-  #ddev-nodisplay
-  #ddev-description:Check architecture type for incompatible arm64 type
-  if [ "$(arch)" = "arm64" -o "$(arch)" = "aarch64" ]; then
-    echo "This package does not work on arm64 machines";
-    exit 1;
-  fi
 
 project_files:
 - docker-compose.firebird.yaml
