@@ -10,7 +10,7 @@ services:
       TZ: UTC
       FIREBIRD_USER: db
       FIREBIRD_PASSWORD: db
-      FIREBIRD_DATABASE: db
+      FIREBIRD_DATABASE: db.fdb
     # These labels ensure this service is discoverable by ddev.
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
@@ -18,3 +18,4 @@ services:
 
     volumes:
     - ".:/mnt/ddev_config"
+    - "..:/mnt/project"
