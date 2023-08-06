@@ -4,6 +4,8 @@ pre_install_actions:
 
 project_files:
 - docker-compose.firebird.yaml
+- commands/firebird/isql
+- commands/firebird/nbak-restore
 
 global_files:
 

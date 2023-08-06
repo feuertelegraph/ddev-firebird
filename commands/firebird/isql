@@ -1,6 +1,6 @@
 #!/bin/bash
 #ddev-generated
-## Description: Run isql inside the redis container
+## Description: Run isql inside the firebird container
 ## Usage: isql
 ## Example: "isql"
 
