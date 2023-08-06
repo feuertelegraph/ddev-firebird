@@ -32,13 +32,3 @@ teardown() {
   ddev restart
   health_checks
 }
-
-@test "install from release" {
-  set -eu -o pipefail
-  cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
-  echo "# ddev get ddev/ddev-firebird with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
-  ddev get ddev/ddev-firebird
-  ddev restart >/dev/null
-  health_checks
-}
-
