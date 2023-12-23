@@ -4,4 +4,4 @@
 ## Usage: isql
 ## Example: "isql"
 
-isql -user db -password db /firebird/data/db.fdb
+/usr/local/firebird/bin/isql -user db -password db /firebird/data/db.fdb

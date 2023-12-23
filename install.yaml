@@ -6,6 +6,7 @@ project_files:
 - docker-compose.firebird.yaml
 - commands/firebird/isql
 - commands/firebird/nbak-restore
+- commands/firebird/gbak-restore
 
 global_files:
 

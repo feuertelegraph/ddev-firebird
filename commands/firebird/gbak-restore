@@ -1,0 +1,7 @@
+#!/bin/bash
+#ddev-generated
+## Description: Restore firebird database via gbak
+## Usage: gbak-restore path/to/backup/file
+## Example: "gbak-restore backup_db.nbk"
+
+/usr/local/firebird/bin/gbak -user db -password db -REP /mnt/project/$@ /firebird/data/db.fdb
