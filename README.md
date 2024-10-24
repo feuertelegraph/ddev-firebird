@@ -4,8 +4,23 @@ This repository allows you to quickly install a Firebird 2.5 SS database into a 
 
 ## Installation
 
-1. `ddev get feuertelegraph/ddev-firebird`
-2. `ddev restart`
+For DDEV v1.23.5 or above run
+
+```sh
+ddev add-on get feuertelegraph/ddev-firebird
+```
+
+For earlier versions of DDEV run
+
+```sh
+ddev get feuertelegraph/ddev-firebird
+```
+
+Then restart the project
+
+```sh
+ddev restart
+```
 
 ## Explanation
 
